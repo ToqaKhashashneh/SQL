@@ -23,7 +23,7 @@ BirthYear int Not Null
 Insert Into Books (BookID, Title, AuthorID, PublishedYear, CopiesAvailable, BookCategory)
 Values
  (1, 'Foundation', 1, 2005, 10, 'Engineering'),
- (2, 'Calculas', 2, 2015, 7, 'Mathmatics'),
+ (2, 'Calculus', 2, 2015, 7, 'Mathmatics'),
  (3, 'Atomic Habits', 3, 2018 , 9, 'Self Help'),
  (4, 'Fluid Mechanics', 4, 2017 , 13, 'Engineering'),
  (5, 'Risk Management', 5, 2013 , 15, 'Management');
