@@ -155,9 +155,18 @@ VALUES
 VALUES 
   ('Farah','Hatsuk','2000-05-10', 'King Abdullah Street','Farah@gmail');
 
-  --select  Students.name ,family_info.family_name  
-  --from Students
-  --inner join family_info on Students.family_name = family_info.family_name ;
+  select   Students.* , count(family_name)
+  from Students 
+  group by family_name
+  having count(family_name)>=2
+
+
+
+  SELECT name ,family_name
+FROM Students
+WHERE (SELECT family_name FROM Students) > 1 ;
+
+
 
   SELECT Students.name, family_info.family_name  
 FROM Students
